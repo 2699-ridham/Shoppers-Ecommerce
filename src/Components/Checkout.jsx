@@ -59,7 +59,7 @@ function Checkout() {
                                     </div>
                                 </div>
 
-                                <button type='submit' className="btn btn-success">Add card</button>
+                                <button type='submit' className="btn btn-success">Make Payment</button>
                             </form>
                         </div>
                     </div>
