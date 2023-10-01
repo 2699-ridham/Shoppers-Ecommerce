@@ -40,10 +40,10 @@ function Login() {
                                 <p className="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
                             </div>
 
-                            <button className="btn btn-outline-primary btn-md me-3" background-color='#3b5998'>
+                            <button className="btn btn-outline-primary btn-md me-3 mb-2" background-color='#3b5998'>
                                 <i className="fa fa-facebook-official"></i> Continue with Facebook
                             </button>
-                            <button className="btn btn-outline-danger btn-ms" background-color='#55acee'>
+                            <button className="btn btn-outline-danger btn-ms mb-2" background-color='#55acee'>
                                 <i className="fa fa-google"></i> Continue with Google
                             </button>
                             <p className="small fw-bold mt-2 pt-1 mb-0">Don't have an account?

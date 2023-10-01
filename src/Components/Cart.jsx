@@ -119,7 +119,7 @@ function Cart() {
                                 Proceed to checkout
                             </button>
                         </div>
-                        <div className='w-25'>
+                        <div className='col-xs-1'>
                             <Link to="/products" type="button" className="btn btn-primary me-2">
                                 <i className='fa fa-arrow-left'></i> Continue shopping
                             </Link>

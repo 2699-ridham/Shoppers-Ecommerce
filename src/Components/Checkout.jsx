@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Checkout() {
     return (
@@ -11,7 +12,7 @@ function Checkout() {
                                 <h2>Payment</h2>
                             </div>
                             <form action="">
-                                <p className="fw-bold mb-3 pb-2">Saved cards:</p>
+                                <p className="fw-bold mb-3 pb-2">Enter Card Details:</p>
 
                                 <div className="d-flex flex-row align-items-center mb-3 pb-1 ms-3">
                                     <img className="img-fluid" src="https://img.icons8.com/color/48/000000/mastercard-logo.png" alt='' />
@@ -35,8 +36,6 @@ function Checkout() {
                                     </div>
                                 </div>
 
-                                <p className="fw-bold mb-3">Add new card:</p>
-
                                 <div className="form-outline mb-4">
                                     <label className="form-label">Cardholder's Name</label>
                                     <input type="text" className="form-control form-control-lg" />
@@ -59,7 +58,10 @@ function Checkout() {
                                     </div>
                                 </div>
 
-                                <button type='submit' className="btn btn-success">Make Payment</button>
+                                <button type='submit' className="btn btn-success me-3 mb-2">Make Payment</button>
+                                <Link to="/cart">
+                                    <button type='submit' className="btn btn-secondary mb-2">Review Your Cart</button>
+                                </Link>
                             </form>
                         </div>
                     </div>

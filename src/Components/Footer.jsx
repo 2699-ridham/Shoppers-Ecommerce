@@ -10,29 +10,29 @@ function Footer() {
 
                     <section className="mb-4">
 
-                        <button className="btn btn-primary btn-md me-3">
+                        <button className="btn btn-primary btn-md me-2">
                             <i className="fa fa-facebook-official"></i>
                         </button>
-                        <button className="btn btn-danger btn-md me-3">
+                        <button className="btn btn-danger btn-md me-2">
                             <i className="fa fa-google"></i>
                         </button>
 
 
-                        <button className="btn btn-primary btn-md me-3">
+                        <button className="btn btn-primary btn-md me-2">
                             <i className="fa fa-twitter"></i>
                         </button>
 
 
-                        <button className="btn btn-dark btn-md me-3">
+                        <button className="btn btn-dark btn-md me-2">
                             <i className="fa fa-github"></i>
                         </button>
 
 
-                        <button className="btn btn-primary btn-md me-3">
+                        <button className="btn btn-primary btn-md me-2">
                             <i className="fa fa-linkedin"></i>
                         </button>
 
-                        <button className="btn btn-danger btn-md me-3">
+                        <button className="btn btn-danger btn-md me-2">
                             <i className="fa fa-instagram"></i>
                         </button>
                     </section>
