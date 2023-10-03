@@ -8,7 +8,7 @@ function Register() {
     const { values, errors, touched,handleChange, handleSubmit} = useFormik({
         initialValues: initialValue,
         validationSchema: signUpSchema,
-        onSubmit: (values,action) => {
+        onSubmit: (action) => {
             action.resetForm();
         }
         
