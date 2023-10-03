@@ -92,10 +92,10 @@ function Cart() {
                                 })}
                         </div>
                         <div className='col-xs-1'>
-                            <Link to="/products" type="button" className="btn btn-primary me-2">
+                            <Link to="/products" type="button" className="btn btn-primary me-2 mb-2">
                                 <i className='fa fa-arrow-left'></i> Continue shopping
                             </Link>
-                            <button className="btn btn-primary" onClick={() => { navigate('/payment-page') }}>
+                            <button className="btn btn-primary mb-2" onClick={() => { navigate('/payment-page') }}>
                                 <img src={checkout} alt='checkout' height='22px' width='20px' className='me-2 rounded' />
                                 Proceed to checkout
                             </button>

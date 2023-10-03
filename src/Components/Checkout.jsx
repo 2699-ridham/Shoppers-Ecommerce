@@ -17,7 +17,7 @@ function Checkout() {
     return (
         <section className="p-4 p-md-5">
             <div className="row d-flex justify-content-center">
-                <div className="col-md-10 col-lg-8 col-xl-5">
+                <div className="col-md-10 col-lg-8 col-xl-5 mb-4">
                     <div className="card rounded-3">
                         <div className="card-body p-4 mb-4">
                             <div className="text-center mb-3">

@@ -4,6 +4,8 @@ import { Link, useParams } from 'react-router-dom';
 import { ClimbingBoxLoader } from 'react-spinners';
 import { useDispatch } from 'react-redux';
 import { AddItemToCart } from '../Redux/Actions/Actions';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function SingleProductPage() {
 
@@ -14,6 +16,16 @@ function SingleProductPage() {
 
     const addProduct = (product) => {
         dispatch(AddItemToCart(product));
+        toast.success('Item Added Successfully', {
+            position: "top-right",
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+        });
     }
     useEffect(() => {
         const fetchproducts = async () => {
@@ -39,6 +51,18 @@ function SingleProductPage() {
     const ShowDetailedProduct = () => {
         return (
             <>
+                <ToastContainer
+                    position="top-right"
+                    autoClose={4000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss={false}
+                    draggable
+                    pauseOnHover={false}
+                    theme="dark"
+                />
                 <Link to="/products">
                     <button className='btn btn-outline-dark fs-3'>
                         <i className='fa fa-arrow-circle-o-left'></i>
@@ -56,10 +80,10 @@ function SingleProductPage() {
                     </p>
                     <p className="display-6 fw-bold my-4">Rs. {data.price}</p>
                     <p className=' lead fs-5'>{data.description}</p>
-                    <button className="btn btn-outline-dark px-4 py-2 fw-bold" onClick={() => addProduct(data)}>
+                    <button className="btn btn-outline-dark px-4 py-2 fw-bold mb-2" onClick={() => addProduct(data)}>
                         Add to Cart
                     </button>
-                    <Link to="/cart" className='btn btn-outline-primary ms-2 px-3 py-2 fw-bold'>Go To Cart</Link>
+                    <Link to="/cart" className='btn btn-outline-primary ms-2 px-3 py-2 fw-bold mb-2'>Go To Cart</Link>
                 </div>
             </>
         )
